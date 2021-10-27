@@ -2,4 +2,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/anchorag/ac_server_main/
     - /bin/cp -R * $DEPLOYPATH
-    - source /home/anchorag/virtualenv/ac_server/3.8/bin/activate && cd /home/anchorag/ac_server_main && pip install -r  /home/anchorag/ac_server_main/requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
+    - source /home/anchorag/virtualenv/ac_server_main/3.8/bin/activate && cd /home/anchorag/ac_server_main && pip install -r  /home/anchorag/ac_server_main/requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
