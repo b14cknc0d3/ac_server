@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$-+=w7)0pwy5jqh^=b7@1($hd1c$z*tp7_pec8@&t1n^rt+%52
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(env.get("DJANGO_DEBUG",0))
 
-ALLOWED_HOSTS = ['anchoragegwadar.com','127.0.0.1','www.anchoragegwadar.com']
+ALLOWED_HOSTS = ['anchorageconsultant.com','127.0.0.1','www.anchorageconsultant.com']
 
 
 # Application definition
@@ -127,7 +127,7 @@ if DEBUG:
     STATIC_LOC = "public_html/"
    
 else:
-    STATIC_LOC = "/home/anchorag/public_html/"
+    STATIC_LOC = "/home/anchorag1/public_html/"
 # STATIC
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
