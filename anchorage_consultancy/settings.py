@@ -125,9 +125,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 if DEBUG:
     STATIC_LOC = "public_html/"
-   
 else:
-    STATIC_LOC = "/home/anchorag1/public_html/"
+    STATIC_LOC = "/home/anchora1/public_html/"
 # STATIC
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
