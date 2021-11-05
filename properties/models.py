@@ -13,8 +13,11 @@ def get_file_path(instance, filename):
 
 class Properties(models.Model):
     # BUY_OR_SELL=[('BUY','BUY'),('SELL','SELL') ]
-    TYPE=[('2kh','2_KANAL_HOUSE'),('1kh','1_KANAL_HOUSE'),('4mh','14_MARLAR_HOUSE'),('5mh','5_MARLAR_HOUSE'),
-    ('2kp','2_KANAL_PLOT'),('1kp','1_KANAL_PLOT'),('4kp','4_KANAL_PLOT'),('5mp','5_MARLAR_PLOT'),('5ep','5_MARLA_EXTENSION_PLOT'),('5kf','5_KANAL_FARM')
+    TYPE=[('2kh','2_KANAL_HOUSE'),('1kh','1_KANAL_HOUSE'),
+    ('4mh','14_MARLAR_HOUSE'),('5mh','5_MARLAR_HOUSE'),
+    ('2kp','2_KANAL_PLOT'),('1kp','1_KANAL_PLOT'),
+    ('4mp','14_MARLAR_PLOT'),('5mp','5_MARLAR_PLOT'),
+    ('5ep','5_MARLA_EXTENSION_PLOT'),('5kf','5_KANAL_FARM')
     ]
     OWNER_OR_BROKER=[('O','OWNER'),('B','BROKER')]
     name = models.CharField(max_length=100)
