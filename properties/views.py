@@ -3,7 +3,7 @@ from django.db.models.query import QuerySet
 from rest_framework.generics import ListAPIView,CreateAPIView
 from properties.models import Bid, Properties, Youtube
 
-from properties.serializers import BidSerializer, PropertySerializer
+from properties.serializers import BidSerializer, PropertySerializer, YoutubeSerializer
 
 # Create your views here.
 
@@ -28,4 +28,5 @@ class PropertiesCreateView(CreateAPIView):
     
 class YouTubeView(ListAPIView):
     permission_class=()
+    serializer_class=YoutubeSerializer
     queryset=Youtube.objects.all()
