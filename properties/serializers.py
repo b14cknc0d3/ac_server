@@ -17,7 +17,7 @@ class PropertySerializer(serializers.ModelSerializer):
     bidders =BidPrivateSerializer(many=True, read_only=True)
     class Meta:
         model = Properties
-        fields = ("id","name","price","phone","video_links","description","owner_or_broker","category","bidders")
+        fields = ("id","name","price","phone","image","video_links","description","owner_or_broker","category","bidders")
 
 
 
