@@ -30,11 +30,13 @@ class Properties(models.Model):
     # buy_or_sell = models.CharField(max_length=4,choices=BUY_OR_SELL)
     category = models.CharField(_("Properties Type"), max_length=3,choices=TYPE)
 
+
+
     def __str__(self):
         return f'{self.name} - {self.price} - {self.phone} - {self.owner_or_broker} - {self.category}'
 
 class Bid(models.Model):
-    property_id= models.ForeignKey(Properties,on_delete=models.CASCADE)
+    property_id= models.ForeignKey(Properties,on_delete=models.CASCADE,related_name='bidders')
     bid_price = models.IntegerField()
     bidder_name = models.CharField(max_length=100)
     bidder_phone = PhoneNumberField(_("Phone No"),region='PK')
