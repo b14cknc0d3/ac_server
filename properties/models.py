@@ -45,3 +45,11 @@ class Bid(models.Model):
 
     def __str__(self) -> str:
         return f'{self.bid_price} {self.bidder_name} {self.property_id}';
+
+
+class Youtube(models.Model):
+    youtube_link = models.URLField(_("Youtube Link"),max_length=200)
+
+
+    def __str__(self):
+        return f'{self.youtube_link}'
