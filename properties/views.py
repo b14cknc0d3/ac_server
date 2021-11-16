@@ -11,6 +11,12 @@ class PropertiesView(ListAPIView):
     permission_class =()
     serializer_class=PropertySerializer
     queryset = Properties.objects.all()
+    
+    
+    def get_queryset(self):
+        qs = self.queryset
+        qs = qs.filter(allowed=True)
+        return qs
 
 
 class BidCreateView(CreateAPIView):
@@ -24,8 +30,8 @@ class PropertiesCreateView(CreateAPIView):
     serializer_class = PropertySerializer
     queryset = Properties.objects.all()
     
-    
-    
+
+
 class YouTubeView(ListAPIView):
     permission_class=()
     serializer_class=YoutubeSerializer

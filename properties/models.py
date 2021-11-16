@@ -29,6 +29,7 @@ class Properties(models.Model):
     owner_or_broker = models.CharField(max_length=1,choices=OWNER_OR_BROKER)
     # buy_or_sell = models.CharField(max_length=4,choices=BUY_OR_SELL)
     category = models.CharField(_("Properties Type"), max_length=3,choices=TYPE)
+    allowed = models.BooleanField(default=False);
 
 
 
