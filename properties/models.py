@@ -14,10 +14,13 @@ def get_file_path(instance, filename):
 class Properties(models.Model):
     # BUY_OR_SELL=[('BUY','BUY'),('SELL','SELL') ]
     TYPE=[('2kh','2_KANAL_HOUSE'),('1kh','1_KANAL_HOUSE'),
-    ('4mh','14_MARLAR_HOUSE'),('5mh','5_MARLAR_HOUSE'),
+    ('4mh','14_MARLA_HOUSE'),('5mh','5_MARLA_HOUSE'),
     ('2kp','2_KANAL_PLOT'),('1kp','1_KANAL_PLOT'),
-    ('4mp','14_MARLAR_PLOT'),('5mp','5_MARLAR_PLOT'),
-    ('5ep','5_MARLA_EXTENSION_PLOT'),('5kf','5_KANAL_FARM'),('2kc','2_KANAL_CONSTRUCTION'),('1kc','1_KANAL_CONSTRUCTION'),('5mc','5_MARLA_CONSTRUCTION'),('4mc','14_MARLA_CONSTRUCTION')
+    ('4mp','14_MARLA_PLOT'),('5mp','5_MARLA_PLOT'),
+    ('5ep','5_MARLA_EXTENSION_PLOT'),('5kf','5_KANAL_FARM'),
+    ('2kc','2_KANAL_CONSTRUCTION'),('1kc','1_KANAL_CONSTRUCTION'),('5mc','5_MARLA_CONSTRUCTION'),('4mc','14_MARLA_CONSTRUCTION'),
+    
+    ('5mg','5_MARLA_NAG'),('1mg','10_MARLA_NAG'),('1kg','1_KANAL_NAG')
     ]
     OWNER_OR_BROKER=[('O','OWNER'),('B','BROKER')]
     name = models.CharField(max_length=100)
